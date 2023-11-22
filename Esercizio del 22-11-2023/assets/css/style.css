@@ -559,6 +559,14 @@ aside > div {
   margin: 0;
 }
 
+.tag > i {
+  position: absolute;
+  float: right;
+  top: 1rem;
+  right: 0;
+  margin: 0;
+}
+
 /*DATE*/
 .date {
   float: auto;
@@ -624,6 +632,14 @@ section > h2 {
   font-size: 1.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem rgb(51, 51, 51, 0.8);
   box-sizing: border-box;
+}
+
+.tag > i {
+  position: absolute;
+  float: right;
+  top: 1rem;
+  right: 0;
+  margin: 0;
 }
 
 /*calendar*/
@@ -699,7 +715,7 @@ section > h2 {
   h1 {
     width: 100%;
     margin-bottom: 0;
-    font-size: 4.2rem;
+    font-size: 4rem;
     box-sizing: content-box;
     z-index: 2;
     float: auto;
@@ -715,7 +731,7 @@ section > h2 {
     width: 50%;
     float: right;
     position: absolute;
-    bottom: -1.5rem;
+    bottom: -1.3rem;
     right: 0;
     z-index: -1;
   }
@@ -763,5 +779,28 @@ section > h2 {
   box-shadow: 0.1rem 0.1rem 0.2rem rgb(51, 51, 51, 0.8);
   box-sizing: border-box;
 }
+
+/*TAG*/
+
+aside > div {
+  position: relative;
+  min-height: 10rem;
+  vertical-align: middle;
+}
+
+.tag {
+  z-index: 0;
+  position: absolute;
+  float: right;
+  top: 0;
+  right: -3;
+  border: 0;
+  font-size: 4rem;
+  color: #CECECE;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 }
