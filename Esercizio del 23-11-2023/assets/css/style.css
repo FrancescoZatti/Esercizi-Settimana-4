@@ -1,0 +1,592 @@
+/*generali*/
+html {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    min-width: 350px;
+}
+
+/*HEADER*/
+
+header {
+    text-align: center;
+    margin: 1rem;
+    position: sticky;
+    top: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 36%, rgba(144,0,128,0) 100%);
+}
+
+nav {
+    background-color: rgb(255, 235, 173, 0.5);
+    backdrop-filter: blur(5px);
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav > button {
+    border: 0px;
+    background-color: #FFDF7F;
+    color: #732104;
+    font-weight: 600;
+    border-radius: 4rem;
+}
+
+nav > button:hover {
+    background-color: #fcd45a;
+}
+
+#shop > img {
+    height: 2.5rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}
+
+#shop > p {
+    vertical-align: middle;
+    display: inline;
+}
+
+#shop {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem;
+    order: 0;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.navigation {
+    width: 40%;
+    clear: both;
+    padding: 1rem;
+    font-size: 1rem;
+    flex: auto;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*MAIN*/
+main {
+    text-align: center;
+}
+
+/*ARTICLE*/
+
+article {
+    margin: 2rem 1rem;
+}
+
+h1 {
+    color: #732104;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.product {
+    width: 100%;
+    border-radius: 3rem;
+    background-color: #FEF7E2;
+    color: #732104;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 1rem 0;
+}
+
+.product > img {
+    width: 100%;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.product > div h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+.product > div p {
+    font-size: 0.8rem;
+}
+
+.product > div {
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: baseline;
+    width: 40%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1rem;
+    vertical-align: middle;
+}
+
+.product > p {
+    margin: 1rem;
+    vertical-align: middle;
+}
+
+.product > button {
+    border: 0px;
+    background-color: #FFDF7F;
+    color: #732104;
+    font-weight: 600;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.product > button:hover {
+    background-color: #fcd45a;
+}
+
+/*ASIDE*/
+
+aside {
+    margin: 2rem 1rem;
+}
+
+aside > h2 {
+        color: #732104;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+}
+
+aside > section {
+    width: 100%;
+    border-radius: 3rem;
+    background-color: #FEF7E2;
+    color: #732104;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 1rem 0;
+}
+
+aside > section div {
+    text-align: left;
+    width: 100%;
+    margin: 2rem;
+}
+
+aside > section div h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+aside > section div p {
+    line-height: 1.3rem;
+    font-weight: 400;
+}
+
+aside > section img {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #FFDF7F;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: left;
+    margin: 0 1rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+
+/*TABLET*/
+@media screen and (min-width: 560px) {
+/*HEADER*/
+    header {
+        margin: 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 36%, rgba(144,0,128,0) 100%);
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: rgb(255, 235, 173, 0.5);
+        backdrop-filter: blur(5px);
+        width: auto;
+        height: auto;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    nav > button {
+        border: 0px;
+        background-color: #FFDF7F;
+        color: #732104;
+        font-weight: 600;
+    }
+
+    nav > button:hover {
+        background-color: #fcd45a;
+    }
+
+    #shop > img {
+        height: 1.5rem;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
+
+    #shop > p {
+        vertical-align: middle;
+        display: inline;
+    }
+
+    #shop {
+        font-size: 1rem;
+        text-align: center;
+        width: auto;
+        padding: 1.5rem;
+        order: 0;
+        margin: 0.1rem;
+        margin-bottom: 0.5rem;
+        box-sizing: border-box;
+        order: 3;
+        align-self: auto;
+        vertical-align: middle;
+    }
+
+    .navigation {
+        width: auto;
+        max-width: 30%;
+        height: auto;
+        padding: 1rem;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        margin-bottom: 1rem;
+        vertical-align: middle;
+    }
+    
+    #uno {
+        order: 1;
+    }
+
+    #due {
+        order: 2;
+    }
+
+    #tre {
+        order: 4;
+    }
+
+    #quattro {
+        order: 5;
+    }
+
+/*ARTICLE*/
+
+    article {
+        margin: 2rem 1rem;
+        text-align: left;
+    }
+
+    article > section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        color: #732104;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .product {
+        width: 40%;
+        border-radius: 3rem;
+        background-color: #FEF7E2;
+        color: #732104;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin: 1rem 0;
+    }
+
+    .product > img {
+        width: 100%;
+        border-radius: 3rem 3rem 0rem 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .product > div h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: baseline;
+    }
+
+    .product > div p {
+        font-size: 0.8rem;
+    }
+
+    .product > div {
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: baseline;
+        width: 40%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 1rem;
+        vertical-align: middle;
+    }
+
+    .product > p {
+        margin: 1rem;
+        vertical-align: middle;
+    }
+
+    .product > button {
+        border: 0px;
+        background-color: #FFDF7F;
+        color: #732104;
+        font-weight: 600;
+        border-radius: 4rem;
+        padding: 0.5rem;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .product > button:hover {
+        background-color: #fcd45a;
+    }
+
+    /*ASIDE*/
+
+    aside > h2 {
+        float: left;
+    }
+
+    aside > section img {
+        width: 90%;
+    }
+}
+
+/*LAPTOP*/
+
+@media screen and (min-width: 770px) {
+    /*HEADER*/
+
+    header {
+        padding: 0;
+        margin: 0;
+        width: 30%;
+        height: 100%;
+        position: fixed;
+    }
+
+    nav {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+
+    #shop {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .navigation {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        margin-bottom: 2rem;
+        align-self: auto;
+        max-width: 100%;
+        max-height: 10%;
+    }
+
+    #shop {
+        order: 0;
+    }
+
+    #uno {
+        order: 1;
+    }
+
+    #due {
+        order: 2;
+    }
+
+    #tre {
+        order: 3;
+    }
+
+    #quattro {
+        order: 4;
+    }
+
+    /*MAIN*/
+
+    main {
+        margin: 0;
+        width: 70%;
+        float: right;
+    }
+
+    .product {
+        width: 30%;
+        height: 40%;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        margin: 0;
+        width: 30%;
+        height: 5%;
+        position: fixed;
+        bottom: 0;
+        padding: 1rem 2rem 2rem 2rem;
+        box-sizing: border-box;
+    }
+}
+
+/*MEDIUM-LARGE*/
+
+@media screen and (min-width: 1025px) {
+
+    #shop {
+        font-size: 1.5rem;
+    }
+
+    #shop > img {
+        height: 2rem;
+        margin-right: 1rem;
+    }
+ 
+    .navigation {
+        font-size: 1.3rem;
+    }
+
+    /*MAIN*/
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    aside > h2 {
+        font-size: 2.5rem;
+    }
+
+    aside > section > div > h3 {
+        font-size: 2rem;
+    }
+
+    article > section {
+        flex-wrap: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .product {
+        width: 27%;
+        border-radius: 3rem;
+        background-color: #FEF7E2;
+        color: #732104;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 1;
+    }
+
+    .product > img {
+        width: 100%;
+        border-radius: 3rem 3rem 0rem 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .product > div h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: baseline;
+    }
+
+    .product > div p {
+        font-size: 0.7rem;
+    }
+
+    .product > div {
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: baseline;
+        width: 40%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 1rem;
+        vertical-align: middle;
+    }
+
+    .product > p {
+        margin: 1rem;
+        vertical-align: middle;
+    }
+
+    .product > button {
+        border: 0px;
+        background-color: #FFDF7F;
+        color: #732104;
+        font-weight: 600;
+        border-radius: 4rem;
+        padding: 0.5rem;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}
+
+/*LARGE*/
